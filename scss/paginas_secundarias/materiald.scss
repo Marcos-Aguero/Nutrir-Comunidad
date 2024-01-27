@@ -1,0 +1,79 @@
+#titulot2{
+    background-color: #C394E8;
+}
+
+.mdigital{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+    background: white;
+    .container{
+        margin: 2rem 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #card1 {
+            background-image: url(../img/cards/recetario-saludable-y-económico.jpg);
+        }
+        #card2{
+            background-image: url(../img/cards/guia-inicio-low-carb.jpg);
+        }
+        #card3{
+            background-image: url(../img/cards/comidas-rapidas.jpg);
+        }
+
+        .card {
+            position: relative;
+            width: 320px;
+            height: 450px;
+            background-size: cover;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+            
+        }
+        a{
+            padding: 6px;
+            font-family: 'Lumios Marker';
+            text-decoration: none;
+            font-size: 4rem;
+            color: #545454;
+            text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.382);
+            transition: all 0.8s;
+            &:hover {
+                font-size: 4.4rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 425px) {
+    .mdigital {
+        flex-direction: column;
+        .container{
+            .card{
+                width: 275px;
+                height: 389px;
+            }
+            a{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1312px) {
+    .mdigital {
+        flex-direction: column;
+        .container {
+            .card {
+                width: 275px;
+                height: 389px;
+            }
+
+            a {
+                font-size: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@400;700&family=Noto+Sans+Mono:wght@300&family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,500&family=Quicksand:wght@300;400;500;600&family=Sniglet&display=swap');
+
+@font-face {
+    font-family: 'Lumios Marker';
+    src: url('../fuentes/lumios-maker/Lumios-Marker.eot'); 
+    src: local('Lumios Marker'), local('Lumios-Marker'),
+        url('../fuentes/lumios-maker/Lumios-Marker.eot?#iefix') format('embedded-opentype'),
+        url('../fuentes/lumios-maker/Lumios-Marker.woff2') format('woff2'),
+        url('../fuentes/lumios-maker/Lumios-Marker.woff') format('woff'),
+        url('../fuentes/lumios-maker/Lumios-Marker.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+#present1 {
+    background: rgb(198, 197, 255);
+    background: linear-gradient(273deg, rgba(198, 197, 255, 1) 0%, rgba(223, 214, 206, 1) 50%);
+}
+
+
+.present{
+    height: 100vh;
+    background-color: #545454;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        
+        p {
+            font-family: 'DM Serif Display', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.615);
+            text-align: justify;
+            font-size: 1.9rem;
+            font-weight: 500;
+            margin: 16px 2rem 16px 7rem;
+            
+        }
+        .gracias {
+            text-align: center;
+        }
+    }
+    .foto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .fotito{
+            width: 700px;
+            margin: 5rem;
+            filter: drop-shadow(5px 5px 5px #222);
+        }
+    }
+    
+}
+/* responsive de present*/
+
+
+
+@media only screen and (min-width: 425px) and (max-width: 1830px){
+    .present {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 125vh;
+        .descripcion{
+            margin-top: -5rem;
+            p{
+                font-size: 110%;
+                margin: 1rem 1rem 10px 1rem;
+            }
+        }
+        .foto{
+            .fotito{
+                width: 400px;
+                margin: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 600px) {
+    .present {
+        .descripcion {
+            p{
+                font-size: 120%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .present {
+        .descripcion {
+            p {
+                font-size: 133%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    .present {
+        .descripcion {
+            p {
+                font-size: 142%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1920px) {
+    .present {
+        height: 80vh;
+        flex-direction: row;
+        .descripcion {
+            p {
+                font-size: 150%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .present {
+        height: 128vh;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 425px) {
+    .present {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 109vh;
+        .descripcion {
+            height: 50vh;
+            margin-top: -4rem;
+            p {
+                font-size: 1.2rem;
+                margin: 5px 16px;
+            }
+        }
+        .foto{
+            width: 100%;
+            .fotito{
+                width: 80%;
+                margin: 0 1rem 1rem 1rem;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .present {
+        height: 128vh;
+    }
+}
+
+
+.atencion {
+    min-height: 80vh;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            padding: 3rem;
+            font-size: 3rem;
+            font-family: 'DM Serif Display', sans-serif;
+            font-weight: 400;
+            color: #545454;
+        }
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__caja{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            padding: 2.4rem;
+            img{
+                width: 12rem;
+            }
+            p {
+                margin-top: 1rem;
+                text-align: center;
+                font-family: 'DM Serif Display', sans-serif;
+                font-size: 1.6rem;
+                color: #545454;
+            }
+        }
+        
+    }
+}
+
+
+/*responsive de atencion*/
+
+
+
+@media only screen and (min-width: 425px) and (max-width: 1830px){
+    .atencion {
+        .titulo{
+            h3{
+                font-size: 2.3rem;
+                text-align: center;
+            }
+        }
+        .menu{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            #caja5{
+                grid-column: 1/3;
+                img {
+                    margin-left: 0%;
+                }
+            }
+            &__caja{
+                align-items: center;
+                padding: 1rem;
+                img{
+                    width: 6rem;
+                    margin-left: 0;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1920px) {
+    .atencion {
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 280px) and (max-width: 425px) {
+    .atencion {
+        .titulo {
+            h3 {
+                padding: 1rem;
+                font-size: 1.6rem;
+                text-align: center;
+            }
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            #caja5{
+                grid-column: 1/3;
+            }
+            &__caja{
+                
+                padding: 1rem;
+                align-items: center;
+                img{
+                    width: 7rem;
+                    margin-left: 0;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 1000px) {
+    .atencion {
+        .menu{
+            &__caja{
+                img{
+                    width: 9rem;
+                }
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+
+.digital {
+    height: 90vh;
+    background: rgb(198, 197, 255);
+    background: linear-gradient(86deg, rgba(198, 197, 255, 1) 0%, rgba(232, 235, 236, 1) 50%);
+    display: flex;
+    flex-direction: row-reverse;
+    &__foto{
+        width: 65%;
+        background-image: url('../img/taza3.jpg');
+        /* background-image: linear-gradient(rgba(243, 238, 243, 0.253), rgba(51, 30, 30, 0.055)), url('../img/taza3.jpg');*/
+        background-size: cover;
+        background-position-y: -6rem;
+    }
+    &__info{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        h3{
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 5rem;
+            font-family: 'DM Serif Display', sans-serif;
+            color: #545454;
+            text-shadow: 2px 2px 7px #00000062;
+        }
+        p {
+            font-size: 1.7rem;
+            padding: 1.5rem;
+            margin: 0 5rem;
+            font-family: 'DM Serif Display', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 7px #00000062;
+        }
+        div {
+            margin: 2rem 0 -2rem 0;
+            a{
+                padding: 6px;
+                font-family: 'Lumios Marker';
+                text-decoration: none;
+                font-size: 4rem;
+                color: #545454;
+                text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.382);
+                transition: all 1.3s;
+                &:hover{
+                    font-size: 4.4rem;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+/* responsive de digital*/
+@media only screen and (min-width: 425px) and (max-width: 1830px) {
+    .digital{
+        &__foto{
+            display: none;
+        }
+        &__info{
+            h3{
+                margin-bottom: 1rem;
+                text-align: center;
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.3rem;
+                padding: 6px 30px;
+                margin: 0;
+            }
+            
+            
+        }
+    }
+}
+@media only screen and (min-width: 280px) and (max-width: 425px) {
+    .digital{
+        height: 90vh;
+        &__foto {
+            display: none;
+        }
+        &__info{
+            background-image: linear-gradient(rgba(243, 238, 243, 0.253), rgba(51, 30, 30, 0.055)), url('../img/taza3.jpg');
+            background-size: cover;
+            background-position: left;
+            height: 94vh;
+            h3{
+                font-size: 2rem;
+                margin-bottom: 0;
+                margin: 0 0.5rem 0 0.5rem;
+                text-align: center;
+                padding: 10px 0;
+                text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.65);
+                /*background-color: rgba(255, 255, 255, 0.233);*/
+            }
+            p {
+                font-size: 1.4rem;
+                margin: 0 .5rem;
+                padding: .5rem 1rem;
+                text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.65);
+                /*background-color: rgba(255, 255, 255, 0.233);*/
+                
+            }
+            div {
+                margin: 1rem 0 0 0;
+            }
+            div a {
+                font-size: 3.3rem;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1920px) {
+    .digital {
+        &__foto{
+            display: block;
+        }
+    }
+}
+
+
+
+
+.guias {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: rgb(198,197,255);
+    background: linear-gradient(273deg, rgba(198,197,255,1) 0%, rgba(223,214,206,1) 50%);
+    &__info{
+        height: 90vh;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        text-align: justify;
+        h3{
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 5rem;
+            font-family: 'DM Serif Display';
+            color: #545454;
+            text-shadow: 2px 2px 7px #00000062;
+        }
+        p {
+            font-size: 2rem;
+            padding: 1.5rem;
+            margin: 4rem;
+            font-family: 'DM Serif Display', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 7px #00000062;
+        }
+        a{
+            padding: 6px;
+            font-family: 'Lumios Marker';
+            text-decoration: none;
+            font-size: 4rem;
+            color: #545454;
+            text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.382);
+            transition: all 1.3s;
+            &:hover{
+                font-size: 4.4rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .fotder {
+        img {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+}
+
+/* responsive de guias*/
+
+@media only screen and (min-width: 425px) and (max-width: 1830px) {
+    .guias{
+        .fotder {
+            display: none;
+        }
+        &__info{
+            width: 100%;
+            h3{
+                font-size: 2.5rem;
+                margin: 1.5rem;
+                text-align: center;
+            }
+            p{
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 425px) {
+    .guias{
+        height: 90vh;
+        .fotder {
+            display: none;
+        }
+        &__info {
+            width: 100%;
+            h3 {
+                font-size: 2rem;
+                text-align: center;
+                margin: 1rem;
+            }
+            p{
+                font-size: 1.5rem;
+                margin: 0;
+                text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+            }
+            a {
+                font-size: 3.3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1920px) {
+    .guias {
+        .fotder {
+            display: block;
+        }
+    }
+}
+
+
+.unite {
+    height: 90vh;
+    background-color: #E5DBD1;
+    h3{
+        font-size: 4rem;
+        font-weight: 500;
+        padding: 3rem 3rem 5rem 3rem;
+        color: white;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 3px 3px 3px #0000006c;
+    }
+    .contenedor {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__caja {
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+            a {
+                margin: 8px 10px;
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}
+
+
+/*responsive de unite*/
+
+@media only screen and (min-width: 280px) and (max-width: 425px){
+    .unite {
+        h3{
+            font-size: 2rem;
+        }
+    }
+}
+
+
+.contacto {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgb(198, 197, 255);
+    background: linear-gradient(86deg, rgba(198, 197, 255, 1) 0%, rgba(232, 235, 236, 1) 50%);
+    justify-content: space-around;
+    
+    .teesperamos{
+        width: 40%;
+        background-image: url('../img/contacto.jpg');
+        /*background-image: linear-gradient(rgba(243, 238, 243, 0.637), rgba(51, 30, 30, 0.055)), url(../img/teesperamos.jpg);*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 35%;
+        background-position-x: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__2{
+            margin-top: 26rem;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 2rem;
+            width: 54%;
+            text-align: center;
+            padding: 1rem;
+            text-shadow: 3px 3px 3px #0000006c;
+            margin-left: 10rem;
+        }        
+    }
+    .formulario {
+        width: 30%;
+        display: flex;
+        align-items: center;
+
+        .row100 {
+            position: relative;
+            width: 250%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+            .col {
+                position: relative;
+                width: 85%;
+                //padding: 0 10px;
+                margin: 30px 23px 20px;
+        
+                .inputBox {
+                    position: relative;
+                    width: 100%;
+                    height: 40px;
+                    color: #fff;
+                    font-family: 'DM Serif Display';
+                    text-shadow: 2px 2px 2px #000000a6;
+        
+                    input,textarea {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: transparent;
+                        box-shadow: none;
+                        border: none;
+                        outline: none;
+                        font-size: 17px;
+                        padding: 10px 10px;
+                        z-index: 1;
+                        color: #000;
+                    }
+
+                    .text {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        line-height: 40px;
+                        font-size: 1.7rem;
+                        padding: 0 10px;
+                        transition: 0.5s;
+                        pointer-events: none;
+                    }
+        
+                    .line {
+                        position: absolute;
+                        bottom: 0;
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: #fff;
+                        transition: 0.5s;
+                        border-radius: 2px;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+.contacto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}*/
+
+.contacto .row100 .col .inputBox input:focus+.text,
+.contacto .row100 .col .inputBox input:valid+.text,
+.contacto .row100 .col .inputBox textarea:focus+.text,
+.contacto .row100 .col .inputBox textarea:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.contacto .row100 .col .inputBox input:focus~.line,
+.contacto .row100 .col .inputBox input:valid~.line {
+    height: 100%;
+}
+
+.contacto .row100 .col .inputBox textarea:focus~.line,
+.contacto .row100 .col .inputBox textarea:valid~.line {
+    height: 100%;
+}
+
+.contacto .row100 .col .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.contacto .row100 .col #enviarCorreo {
+    border: none;
+    margin: 40px 0px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    padding: 6px;
+    font-family: 'Lumios Marker';
+    text-decoration: none;
+    font-size: 4rem;
+    color: #545454;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.382);
+    transition: all 1.3s;
+    &:hover {
+        font-size: 4.4rem;
+        letter-spacing: 2px;
+    }
+}
+
+
+/*responsive contacto*/
+@media only screen and (min-width: 425px) and (max-width: 1830px) {
+    .contacto{
+        height: 105vh;
+        .teesperamos{
+            display: none;
+        }
+        .formulario{
+            width: 100%;
+            display: block;
+            .row100{
+                width: 100%;
+                .col{
+                    .inputBox{
+                        .line{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1920px) {
+    .contacto {
+        .teesperamos{
+            display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 424px) {
+    .contacto {
+        .teesperamos {
+            display: none;
+        }
+        .formulario {
+            width: 100%;
+            display: block;
+            .row100{
+                width: 100%;
+                .col {
+                    #enviarCorreo {
+                        margin: 0;
+                        font-size: 2.8rem;
+                    }
+                    .inputBox{
+                        .text{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
